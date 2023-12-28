@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsPractice</title>
+  </head>
+  <body>
+    <h1>H1</h1><br>
+    <h2 id="myId">H2</h2><br>
+    <h3 class="myClass">H3</h3><br>
+    <p name="myName">P</p><br>
+    <input type="text" placeholder="....."><br>
+    <button onclick="modify()">Modify</button>
+
+    <script>
+        function modify(){
+            document.querySelector('h1').innerHTML="H1 Manipulated";
+            document.querySelector('.myClass').innerHTML="H3 Manipulated";
+            document.querySelector('#myId').innerHTML="H2 Manipulated";
+            document.querySelector('p[name="myName"]').innerHTML="P Manipulated";
+            document.querySelector('input').placeholder="Manipulated";
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsPractice</title>
+  </head>
+  <body>
+    <p>cookie</p>
+    <p>domain</p>
+    <p>date</p>
+    <p>Title</p>
+    <p>URL</p>
+    <button onclick="demo()">Cookie</button>
+    <button onclick="demo1()">Domain</button>
+    <button onclick="demo2()">Last Modified</button>
+    <button onclick="demo3()">Title</button>
+    <button onclick="demo4()">URL</button>
+    <button onclick="replace()">Replace</button>
+    <button onclick="openNew()">New Window</button>
+    <button onclick="items()">Count Items</button>
+    
+
+
+
+    
+    <script>
+        // Cookie 
+
+        function demo(){
+            var cookieInfo=document.cookie;
+            document.getElementsByTagName('p')[0].innerHTML=cookieInfo;
+        };
+
+        // Domain 
+
+        function demo1(){
+            var domainInfo=document.domain;
+            document.getElementsByTagName('p')[1].innerHTML=domainInfo;
+        };
+
+        // Last Modified date
+
+        function demo2(){
+            var Modified=document.lastModified;
+            document.getElementsByTagName('p')[2].innerHTML=Modified;
+        };
+
+        // Title 
+
+        function demo3(){
+            var titleInfo=document.title;
+            document.getElementsByTagName('p')[3].innerHTML=titleInfo;
+        };
+
+        // URL 
+
+        function demo4(){
+            var urlInfo=document.URL;
+            document.getElementsByTagName('p')[4].innerHTML=urlInfo;
+        };
+
+        // Replace document with new and close previous 
+
+        function replace(){
+            document.open('text/html', 'replace');
+            document.write("<h1>Replaced</h1>");
+            document.close();
+        };
+
+        // Open New Window with some content 
+
+        function openNew(){
+            let newWindow= window.open();
+
+            newWindow.document.open();
+            newWindow.document.write("<h1>New Window</h1>");
+            newWindow.document.close();
+        };
+
+        // Count Items
+
+        function items(){
+            let myItems=document.getElementsByTagName('p');
+            let countItems=myItems.length;
+            alert(countItems);
+        };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsPractice</title>
+  </head>
+  <body>
+
+    <h1 id="myId"></h1>
+    <h2 class="myClass"></h2>
+    <h3 class="myClass"></h3>
+    <button class="myClass"></button>
+
+    <span name="myName"></span>
+    <p name="myName"></p>
+    <strong name="myName"></strong>
+
+
+
+    
+    <script>
+        // get element by Id 
+
+        var myElement1= document.getElementById('myId');
+
+            myElement1.innerHTML="My Id";
+
+        // get element by class 
+
+        var myElement2= document.getElementsByClassName('myClass');
+
+            myElement2[0].innerHTML="myClass";
+            myElement2[1].innerHTML="myClass1";
+            myElement2[2].innerHTML="myClass2";
+
+        // get element by name 
+
+        var myElement3= document.getElementsByName('myName');
+
+            myElement3[0].innerHTML="My Name";
+            myElement3[1].innerHTML="My Name1";
+            myElement3[2].innerHTML="My Name2";
+
+    </script>
+  </body>
+</html>

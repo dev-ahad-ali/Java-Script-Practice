@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsPractice</title>
+  </head>
+  <body>
+
+        <button onclick="objAlert()">save</button>
+        <button onclick="objConfirm()">confirm</button>
+        <button onclick="objPrompt()">Prompt</button>
+        <button onclick="objOpen()">open new</button>
+        <button onclick="objClose()">close</button>
+
+
+
+    
+    <script>
+        // Alert Function
+        function objAlert(){
+            alert("Save Success")
+        };
+
+        // Confirm Function
+        function objConfirm(){
+            let result= confirm("Do you want to delete");
+            document.write(result);
+        };
+
+        // Prompt Function 
+        function objPrompt(){
+            let name= prompt("Enter your name");
+            document.write(name);
+        };
+
+        // Open new window Function
+        function objOpen(){
+            open()
+        };
+
+        // Close current window Function 
+        function objClose(){
+            close()
+        };
+
+        // Set Time out Function 
+        setTimeout(function(){
+            alert("Click the Buttons to check out the functions")
+        },5000);
+    </script>
+  </body>
+</html>

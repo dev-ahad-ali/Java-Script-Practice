@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsPractice</title>
+  </head>
+  <body onload="myEvent('loaded')">
+
+    <button onclick="myEvent('clicked')">click</button>
+    <button onmouseover="myEvent('mouse overed')">mouse over</button>
+    <button onmouseout="myEvent('mouse out')">mouse out</button>
+
+    <input type="text" onchange="myEvent('changed')"><br>
+    <input type="text" onkeyup="myEvent('keyup')"><br>
+    <input type="text" onkeydown="myEvent('keydown')"><br>
+
+
+
+    
+    <script>
+        function myEvent(msg){
+            console.log(msg)
+        }
+    </script>
+  </body>
+</html>
